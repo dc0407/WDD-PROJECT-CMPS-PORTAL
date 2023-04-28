@@ -1,0 +1,71 @@
+
+
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown 
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #080808;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+
+html{
+  background-color: aqua;
+  scroll-behavior: smooth;
+} 
+
+.aboutsection,.userguidesection,.contactsection, footer {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar.ul.li{
+  display: inline-block;
+}
+/* Style for the sections of the webpage */
+section {
+    
+    display:flex;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  /* Style for the first section */
+  #aboutsection {
+    background-color: #1abc9c;
+    color: white;
+    display:inline-block;
+    width: 100%;
+  }
+
+  /* Style for the second section */
+  #userguidesection {
+    background-color: #3498db;
+    color: white;
+    display: inline-block;
+    width:100%;
+  }
+
+  /* Style for the third section */
+  #contactsection {
+    background-color: #b659a3;
+    color: white;
+    display: inline-block;
+    width: 100%;
+  }

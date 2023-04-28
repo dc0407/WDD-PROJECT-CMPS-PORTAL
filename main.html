@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage</title>
+<!--  <link rel="stylesheet" href="mainstyle.css"> -->
+
+<style>
+  body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+  }
+  header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+  }
+
+  nav {
+      background-color: #333;
+      overflow: hidden;
+  }
+
+  nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+
+  nav a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+
+  nav li {
+      float: left;
+  }
+
+  /* Add this CSS code to style the sections */
+  section {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-top: 0px;
+  }
+
+  section h2 {
+      font-size: 24px;
+      margin-bottom: 0px;
+  }
+
+  section p {
+      font-size: 18px;
+      line-height: 1.5em;
+  }
+
+  /* Add this CSS code to add more colors */
+  #aboutsection {
+    background-color: #F9D5E5; /* light pink */
+    color: #4A154B; /* dark purple */
+  }
+
+  #userguidesection {
+    background-color: #FCEADE; /* light yellow */
+    color: #C84B31; /* dark orange */
+  }
+
+  #contactsection {
+    background-color: #C7CEEA; /* light blue */
+    color: #3D3D6B; /* dark blue */
+  }
+
+   /* Add this CSS code to change the font style and size */
+   section h2 {
+            font-size: 24px;
+            margin-bottom: 0px;
+   font-family: Arial, sans-serif; 
+          font-size: 2em; 
+        }
+
+        section p {
+          font-family: Arial, sans-serif; 
+          font-size: 1em; 
+          line-height: 1.5em;
+        }
+  footer p{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:solid;
+  }
+
+  /*home button styling*/
+  .button {
+  display:inline-block;
+  border-radius: 50px;
+  background-color: #f47709;
+  border:#1d491a;
+  color: #080101;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 150px;
+  height: 10px;
+  transition: all 0.5s;
+  cursor: pointer;    
+  margin-top: 20px;
+  
+}
+
+.button a {
+  text-decoration: none;
+  color: #1d491a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+address h4{
+  color: #ddd;
+}
+</style>
+
+
+</head>
+<body>
+<header>
+    <img src="header.png" alt="header"> <br>
+</header>
+
+<nav class="navbar" id="navbar">
+      <ul>
+         <li> <a href="signup.html">SIGN UP</a> </li>
+         <li> <a href="#aboutsection">ABOUT</a></li> 
+         <li> <a href="#userguidesection">USER GUIDE</a></li>
+         <li> <a href="#contactsection">CONTACT US</a></li>  
+         <li> <a href="notification.html"> <img src="notification.png"></a></li> 
+      </ul>
+</nav>
+
+<br>
+
+
+
+    <section id="aboutsection"> 
+       
+        <p> About Us: <br> <br>
+            A guided resource point for your overall career and placement development.
+           <br>
+           We ensure to provide you with different modules of assesments, resources, games that ensure a smooth path to develop your aras 
+           of intrest and crack your job interviews. 
+        </p>
+      </section>
+
+    <section id="userguidesection">
+      
+        <p>  User Guide: <br> <br>
+          Thanks for opting CMPS portal. <br>
+            You can signup via signup page present in the top menu to access free resources. <br>
+            We provide you with study-modules that can be accessed through your emails. <br>
+            Under interview preparation module, you will find various quiz assesments and interview tips. <br>
+            Under resources module, you can access various links and guids related to programming and aptitude lessons. <br>
+            under career managemant module, you can surf mind games,personality tests and many more. <br>
+            Feel free to contact us or drop your querries anytime at contactus page via e-mail. <br>
+           
+        </p>
+    </section>
+
+    <section id="contactsection"> 
+       
+        <p>  Contact: <br> <br>
+            Mail Us At <a href="mailto:CMPS@gmail.com">CMPS portal</a>.<br>
+
+            
+            You can follow us at:
+            <ul>
+            
+                <li> <a href="https://www.linkedin.com/in/durga-chandana-sree-mandapati-b74ab9203/"> Linkdin </a></li> <br>
+            </ul></p>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function () {
+          const sections = document.querySelectorAll("section");
+          const navLinks = document.querySelectorAll("nav a");
+      
+          let current = "";
+      
+          sections.forEach(function (section) {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+      
+            if (pageYOffset >= sectionheader - sectionHeight / 3) {
+              current = section.getAttribute("id");
+            }
+          });
+      
+          navLinks.forEach(function (link) {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+              link.classList.add("active");
+            }
+          });
+        });
+      </script>
+      
+
+
+      <FOOTER>
+        
+        
+        <address>
+            
+            <button class="button" style="vertical-align:middle"><span><a href="#">Home</a>  </span></button>
+            <p>
+              <a href="linkdin.com">linkdin</a>  |  <a href="github.com">git</a>
+            </p>
+             
+            <h4> &copy;Terms And Conditions Of Usage applied </h4>
+        </address>
+
+    </FOOTER>
+    
+</body>
+</html>

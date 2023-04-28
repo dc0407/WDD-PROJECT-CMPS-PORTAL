@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login or Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="signupstyle.css">
+    
+  </head>
+  <body>
+    <header>
+      <br>
+      <B>FREE AND EASY ACCESS TO THE SPECIFIED RESOURCES..! </B> <br> <br>
+      SIGN UP NOW! <p><p> 
+        <p></p>
+      </p></p>
+     <img src="image1.png" alt="">
+    </header>
+
+    <div id="login-form">
+      <h2>Login</h2>
+
+      <form id="formlogin" method="get" autocomplete="on" action="homepage.html">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter registered email-id" autofocus  required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="checkbox" id="Remember me" name="Remember me"> 
+        <label for="Remember me">Remember me</label> <br>
+        <input type="submit" value="Submit" id="submit" onclick="validate()"> 
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    <!--javascript validation for loginform-->
+<script>
+   function validate(){
+  
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+/*
+if(email == ""){
+    alert("Please enter a email")
+    formLogin.email.focus()
+    return false
+}
+if(password == ""){
+    alert("Please enter a Password")
+    formLogin.password.focus()
+    return false
+} */
+if( email == "Test@gmail.com" && password == "#123"){
+    alert("Login successfully");
+    window.location = "homepage.html";
+    return false;
+}
+else{
+ alert("Login failed - Please enter correct Username and Password")   
+}
+   }
+  </script>
+    <div id="signup-form">
+      <h2>Signup</h2>
+      <form action="/signup" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autofocus required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter valid mail-id" required><br>
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="phone number"  pattern="\d{10}" placeholder="xxxxxxxxxx" required> <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="password-confirm">Confirm Password:</label>
+        <input type="password" id="password-confirm" name="password-confirm" required><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body> <br>
+  <footer>
+    <div class="home-link">
+      <a href="main.html">Home</a>
+    </div>
+  </footer>
+</html>
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    
+<style>
+ body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    header {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+    }
+  
+    nav {
+        background-color: #333;
+        overflow: hidden;
+    }
+  
+    nav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+  
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+  
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+  
+    nav li {
+        float: right;
+    }
+
+
+    
+/* modules */
+.modules{
+  background: rgb(248, 242, 210);
+  padding: 2rem 2rem;
+}
+.modules .title{
+  text-align: center;
+}
+.title h1{
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.title span{
+  color: rgb(42, 142, 31);
+}
+.modules_boxes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.box{
+  width: 320px;
+  background: #dfdeccd0;
+  padding: 2rem;
+  margin: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 1px 30px 20px rgba(0, 0, 0, 0.1);
+}
+.box i{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.box p{
+  color: gray;
+  margin-top: 10px;
+}
+.box:hover, .br{
+  border: 2px solid rgb(213, 228, 8);
+}
+.box a{
+    color: black;
+    text-decoration: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="header.png" alt="header"> <br>
+    </header>
+    
+    <nav class="navbar" id="navbar">
+          <ul>
+            <li> <a href="notification.html"> <img src="notification.png"></a></li> 
+             <li><a href="main.html">LOGOUT</a></li>
+          </ul>
+    </nav>
+
+</section>
+
+<section class="modules">
+  <div class="container">
+    <div class="title">
+      <h1>Vist our <span>modules..</span></h1>
+    </div>
+    <div class="modules_boxes">
+      <div class="box">
+        <i class="fa-solid fa-hotel"></i>
+        <a href="interview.html"><h4>INTERVIEW PREPARATION</h4></a>
+      </div>
+
+      <div class="box br">
+        <i class="fa-solid fa-plane"></i>
+       <a href="resources.html"> <h4>RESOURCES</h4></a>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-mountain-sun"></i>
+        <a href="career.html"><h4>CAREER MANAGEMENT</h4></a>
+      </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>
