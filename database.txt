@@ -1,0 +1,2 @@
+create a database "user" in login schema of mysql .
+create coloumns:id,email,password,name.
